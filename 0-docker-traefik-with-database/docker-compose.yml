@@ -101,8 +101,6 @@ services:
       test: [ "CMD", "curl", "--silent", "--fail", "http://localhost:3000/health" ]
 networks:
   frontend:
-    name: ${REVERSE_PROXY_NETWORK}
-    external: true
   internal:
 volumes:
   database-storage:
